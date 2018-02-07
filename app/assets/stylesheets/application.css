@@ -11,8 +11,6 @@ footer{padding:40px 0}
 -moz-border-radius:0;
 border-radius:0;
 }
-*= require bootstrap-social
-*= require font-awesome
 
 #lab_social_icon_footer {
   padding: 40px 0;
