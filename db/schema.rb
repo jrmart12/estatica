@@ -12,21 +12,8 @@
 
 ActiveRecord::Schema.define(version: 20180206201852) do
 
-  create_table "ideas", force: :cascade do |t|
-    t.string "name"
-    t.text "description"
-    t.string "picture"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "proyectos", force: :cascade do |t|
-    t.string "name"
-    t.text "description"
-    t.string "picture"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "todos", force: :cascade do |t|
     t.string "title"
